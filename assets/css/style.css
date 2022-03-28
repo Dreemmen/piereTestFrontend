@@ -415,7 +415,7 @@ video {
   color: white;
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .top-header.closed .menu-icon {
     display: block;
     position: absolute;
@@ -571,7 +571,7 @@ video {
     color: white;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
   .top-header.closed .menu-icon {
     display: block;
     position: absolute;
@@ -606,7 +606,7 @@ video {
   }
   .top-header.opened .lang_select {
     display: block;
-    max-width: 768px;
+    max-width: 320px;
     font-size: 24px;
     line-height: 29px;
     margin: 0;
@@ -626,7 +626,7 @@ video {
   }
   .top-header.opened .site-menu a {
     display: block;
-    max-width: 768px;
+    max-width: 320px;
     font-size: 24px;
     line-height: 29px;
     margin: 0;
@@ -792,7 +792,7 @@ video {
     color: white;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 320px) {
   .site-footer {
     white-space: normal;
   }
