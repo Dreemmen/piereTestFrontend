@@ -262,9 +262,15 @@ video {
   display: inline-block;
   margin-top: 43px;
   color: white;
-  background: #FFA800;
+  background: #ffa800;
   border-radius: 25px;
   padding: 14px 76px;
+}
+.crosroad-btns .btn::hover {
+  background: #ff8a00;
+}
+.crosroad-btns .btn::active {
+  background: #ffda16;
 }
 
 .mail-form {
@@ -313,13 +319,19 @@ video {
 }
 .mail-form .submit-btn {
   grid-column: 1/span 2;
-  background: #CD7C20;
+  background: #ffa800;
   color: white;
   border-radius: 40px;
   border: 0;
   margin: auto;
   margin-top: 53px;
   padding: 17px 68px;
+}
+.mail-form .submit-btn::hover {
+  background: #ff8a00;
+}
+.mail-form .submit-btn::active {
+  background: #ffda16;
 }
 
 .supporters {

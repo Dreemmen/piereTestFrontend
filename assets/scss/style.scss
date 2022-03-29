@@ -247,9 +247,15 @@ video {
         display: inline-block;
         margin-top: 43px;
         color: white;
-        background: #FFA800;
+        background: #ffa800;
         border-radius: 25px;
         padding: 14px 76px;
+    }
+    .btn::hover {
+        background: #ff8a00;
+    }
+    .btn::active {
+        background: #ffda16;
     }
 }
 
@@ -300,13 +306,19 @@ video {
     .submit-btn {
         @extend .font-large;
         grid-column: 1 / span 2;
-        background: #CD7C20;
+        background: #ffa800;
         color: white;
         border-radius: 40px;
         border: 0;
         margin: auto;
         margin-top: 53px;
         padding: 17px 68px;
+    }
+    .submit-btn::hover {
+        background: #ff8a00;
+    }
+    .submit-btn::active {
+        background: #ffda16;
     }
 }
 
