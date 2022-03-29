@@ -16,7 +16,21 @@
 }
 @media screen and (min-width: 768px) {
   .wrapper {
-    width: 1336px;
+    min-width: 768px;
+    max-width: 1336px;
+  }
+
+  .crosroad-btns {
+    /*white-space: nowrap;*/
+  }
+}
+@media screen and (max-width: 550px) {
+  .crosroad-btns {
+    flex-wrap: wrap;
+  }
+
+  .crosroad-btns .wrap {
+    width: 100% !important;
   }
 }
 .font-regular, .site-footer .site-menu a, .mail-form input, .mail-form textarea, .crosroad-btns .btn, .about-project p, header {
@@ -131,33 +145,36 @@ header {
   display: flex;
   text-align: center;
   min-height: 72px;
-  align-items: end;
-  margin: auto;
   position: relative;
   z-index: 3;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
 }
 header .menu-icon, header .cross-icon {
   display: none;
 }
-header .site-menu {
-  margin-left: 300px;
-}
-
 .top-logo {
-  position: absolute;
+  position: relative;
   top: -50px;
-  left: 62px;
+  height: 72px;
 }
 
 .lang_select {
-  flex-grow: 1;
   order: 3;
+}
+
+.site-menu {
+  flex-grow: 1;
 }
 
 .site-menu a {
   padding: 4px;
-  margin: 0 20px;
+  margin: 2%;
+  margin-bottom: 20px;
   color: #060606;
+  white-space: nowrap;
 }
 
 .site-menu a:hover {
@@ -234,9 +251,8 @@ video {
 .crosroad-btns {
   height: 431px;
   align-items: center;
-  margin: 0 152px;
+  margin: 0 5%;
   display: flex;
-  white-space: nowrap;
 }
 .crosroad-btns .wrap {
   width: 50%;
@@ -310,7 +326,6 @@ video {
   background: #FFCB66;
   position: relative;
   height: 483px;
-  padding: 0 122px;
 }
 .supporters .supporters-container {
   display: flex;
@@ -318,17 +333,14 @@ video {
   align-items: center;
   justify-content: space-around;
   height: 100%;
+  padding: 10%;
 }
 .supporters h2 {
   width: 100%;
   text-align: center;
-  height: 30px;
-  line-height: 101px;
+  position: absolute;
+  top: 12%;
 }
-.supporters .supporter {
-  margin-top: -53px;
-}
-
 .to_top {
   position: fixed;
   right: 16px;
@@ -353,7 +365,7 @@ video {
   padding-top: 22px;
   padding-bottom: 14px;
   display: grid;
-  grid-template-columns: 236px 221px 325px 276px;
+  /*grid-template-columns: 236px 221px 325px 276px;*/
   grid-template-rows: 274px auto;
   justify-content: space-evenly;
   overflow: visible;
@@ -363,6 +375,10 @@ video {
   grid-column: 1;
   grid-row: 1;
   padding-top: 10px;
+}
+.site-footer .footer-logo img {
+  width: 100%;
+  max-width: 182px;
 }
 .site-footer .footer-menu {
   grid-column: 2;
@@ -486,29 +502,19 @@ video {
     margin: 0px 5%;
   }
 
-  .crosroad-btns .wrap h2 {
-    font-family: "Oswald";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
   .photo-mosaic .img {
     min-height: 105px;
   }
 
-  .supporters {
-    padding: 60px 6% 0 6%;
-  }
   .supporters .supporters-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     align-content: space-around;
     flex-direction: row;
-    height: 50%;
     justify-content: space-around;
     width: 100%;
+    padding: 1%;
   }
   .supporters h2 {
     margin: 5% auto;
@@ -735,6 +741,7 @@ video {
 
   .supporters h2 {
     padding-top: 50px;
+    top: 0;
   }
 
   .supporters .supporters-container {
@@ -742,6 +749,7 @@ video {
     justify-content: space-evenly;
     height: calc(100% - 50px);
     align-content: center;
+    padding: 0;
   }
 
   .supporters .supporter {
