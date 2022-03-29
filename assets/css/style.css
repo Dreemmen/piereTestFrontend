@@ -266,10 +266,10 @@ video {
   border-radius: 25px;
   padding: 14px 76px;
 }
-.crosroad-btns .btn::hover {
+.crosroad-btns .btn:hover {
   background: #ff8a00;
 }
-.crosroad-btns .btn::active {
+.crosroad-btns .btn:active {
   background: #ffda16;
 }
 
@@ -327,10 +327,10 @@ video {
   margin-top: 53px;
   padding: 17px 68px;
 }
-.mail-form .submit-btn::hover {
+.mail-form .submit-btn:hover {
   background: #ff8a00;
 }
-.mail-form .submit-btn::active {
+.mail-form .submit-btn:active {
   background: #ffda16;
 }
 

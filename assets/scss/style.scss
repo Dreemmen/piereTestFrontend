@@ -249,12 +249,12 @@ video {
         color: white;
         background: #ffa800;
         border-radius: 25px;
-        padding: 14px 76px;
+        padding: 14px 76px; 
     }
-    .btn::hover {
+    .btn:hover {
         background: #ff8a00;
     }
-    .btn::active {
+    .btn:active {
         background: #ffda16;
     }
 }
@@ -314,10 +314,10 @@ video {
         margin-top: 53px;
         padding: 17px 68px;
     }
-    .submit-btn::hover {
+    .submit-btn:hover {
         background: #ff8a00;
     }
-    .submit-btn::active {
+    .submit-btn:active {
         background: #ffda16;
     }
 }
